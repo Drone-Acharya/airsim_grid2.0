@@ -8,6 +8,7 @@ Use this branch only for direct controller code. Or maybe nothing. TBD
  - All simulator related files go into `sim-files`
  - Rest TBD
 
+ ### PROPOSE PR ONLY FROM YOUR FORK AND NOT FROM ORIGIN MASTER. LET'S KEEP CODEBASE CLEAN.
 ---
 
 1. Git clone https://github.com/uzh-rpg/minimum_jerk_trajectories and put in parent directory (or append path in `min_jerk_uzh.py`).
