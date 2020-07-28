@@ -14,9 +14,10 @@ posf = [1, 0, 1]  # position
 velf = [0, 0, 1]  # velocity
 accf = [0, 9.81, 0]  # acceleration
 
-def get_path(pos0, vel0, acc0, posf, velf, accf):
+def get_path(pos0, vel0, acc0, posf, velf, accf, Tf = None, debug = False):
 	# Define the duration:
-	Tf = 10
+	if Tf is None:
+		Tf = 10
 
 	# Define the input limits:
 	fmin = 5  #[m/s**2]
@@ -43,8 +44,9 @@ def get_path(pos0, vel0, acc0, posf, velf, accf):
 	floorNormal = [0,0,1]  # we want to be in this direction of the point (upwards)
 	positionFeasible = traj.check_position_feasibility(floorPoint, floorNormal)
 	 
-	print("Input feasibility result: ",    quadtraj.InputFeasibilityResult.to_string(inputsFeasible),   "(", inputsFeasible, ")")
-	print("Position feasibility result: ", quadtraj.StateFeasibilityResult.to_string(positionFeasible), "(", positionFeasible, ")")
+	if debug:
+		print("Input feasibility result: ",    quadtraj.InputFeasibilityResult.to_string(inputsFeasible),   "(", inputsFeasible, ")")
+		print("Position feasibility result: ", quadtraj.StateFeasibilityResult.to_string(positionFeasible), "(", positionFeasible, ")")
 
 	import numpy as np
 	numPlotPoints = 100
@@ -64,4 +66,4 @@ def get_path(pos0, vel0, acc0, posf, velf, accf):
 	    thrust[i] = traj.get_thrust(t)
 	    ratesMagn[i] = np.linalg.norm(traj.get_body_rates(t))
 
-	return position, velocity, acceleration, time
+	return position, velocity, acceleration, time, inputsFeasible, positionFeasible

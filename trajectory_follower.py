@@ -113,7 +113,7 @@ def fly_with_piecewise_control():
 		velf = [0.5, 0, 0]
 		accf = [None, None, None]
 
-		piecewise_path, piecewise_vel, piecewise_acc, piecewise_time = get_path(pos0, vel0, acc0, posf, velf, accf)
+		piecewise_path, piecewise_vel, piecewise_acc, piecewise_time, inF, pF = get_path(pos0, vel0, acc0, posf, velf, accf)
 		duration = piecewise_time[1] - piecewise_time[0]
 	
 		path = format_path(piecewise_path)
@@ -213,7 +213,7 @@ def get_trajectory(waypoint_arr = None):
 		velf = velocity_arr[i+1]
 		accf = acceleration_arr[i+1]
 
-		piecewise_path, piecewise_vel, piecewise_acc, piecewise_time = get_path(pos0, vel0, acc0, posf, velf, accf)
+		piecewise_path, piecewise_vel, piecewise_acc, piecewise_time, inF, pF = get_path(pos0, vel0, acc0, posf, velf, accf)
 		full_path.extend(piecewise_path)
 		full_vel.extend(piecewise_vel)
 
