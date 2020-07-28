@@ -1,0 +1,748 @@
+﻿Log file open, 07/26/20 22:15:55
+LogPakFile: Display: Found Pak file ../../../FlipkartGrid/Content/Paks/FlipkartGrid-WindowsNoEditor.pak attempting to mount.
+LogPakFile: Display: Mounting pak file ../../../FlipkartGrid/Content/Paks/FlipkartGrid-WindowsNoEditor.pak.
+LogPlatformFile: Not using cached read wrapper
+LogTaskGraph: Started task graph with 5 named threads and 23 total threads with 3 sets of task threads.
+LogStats: Stats thread started at 0.059850
+LogD3D11RHI: Loaded GFSDK_Aftermath_Lib.x64.dll
+LogICUInternationalization: ICU TimeZone Detection - Raw Offset: +5:30, Platform Override: ''
+LogPluginManager: Mounting plugin AirSim
+LogPluginManager: Mounting plugin PhysXVehicles
+LogPluginManager: Mounting plugin Paper2D
+LogPluginManager: Mounting plugin AISupport
+LogPluginManager: Mounting plugin LightPropagationVolume
+LogPluginManager: Mounting plugin AnimationSharing
+LogPluginManager: Mounting plugin SignificanceManager
+LogPluginManager: Mounting plugin UObjectPlugin
+LogPluginManager: Mounting plugin AssetManagerEditor
+LogPluginManager: Mounting plugin FacialAnimation
+LogPluginManager: Mounting plugin GeometryMode
+LogPluginManager: Mounting plugin DatasmithContent
+LogPluginManager: Mounting plugin VariantManagerContent
+LogPluginManager: Mounting plugin AlembicImporter
+LogPluginManager: Mounting plugin GeometryCache
+LogPluginManager: Mounting plugin AutomationUtils
+LogPluginManager: Mounting plugin ScreenshotTools
+LogPluginManager: Mounting plugin BackChannel
+LogPluginManager: Mounting plugin ChaosClothEditor
+LogPluginManager: Mounting plugin ChaosCloth
+LogPluginManager: Mounting plugin ChaosEditor
+LogPluginManager: Mounting plugin PlanarCut
+LogPluginManager: Mounting plugin GeometryProcessing
+LogPluginManager: Mounting plugin EditableMesh
+LogPluginManager: Mounting plugin GeometryCollectionPlugin
+LogPluginManager: Mounting plugin ProceduralMeshComponent
+LogPluginManager: Mounting plugin ChaosSolverPlugin
+LogPluginManager: Mounting plugin ChaosNiagara
+LogPluginManager: Mounting plugin Niagara
+LogPluginManager: Mounting plugin CharacterAI
+LogPluginManager: Mounting plugin PlatformCrypto
+LogPluginManager: Mounting plugin MagicLeapPassableWorld
+LogPluginManager: Mounting plugin MagicLeap
+LogPluginManager: Mounting plugin MLSDK
+LogPluginManager: Mounting plugin MagicLeapLightEstimation
+LogPluginManager: Mounting plugin AvfMedia
+LogPluginManager: Mounting plugin ImgMedia
+LogPluginManager: Mounting plugin MediaCompositing
+LogPluginManager: Mounting plugin WmfMedia
+LogPluginManager: Mounting plugin MeshPainting
+LogPluginManager: Mounting plugin TcpMessaging
+LogPluginManager: Mounting plugin UdpMessaging
+LogPluginManager: Mounting plugin ActorSequence
+LogPluginManager: Mounting plugin LevelSequenceEditor
+LogPluginManager: Mounting plugin MatineeToLevelSequence
+LogPluginManager: Mounting plugin TemplateSequence
+LogPluginManager: Mounting plugin MovieRenderPipeline
+LogPluginManager: Mounting plugin EditorScriptingUtilities
+LogPluginManager: Mounting plugin NetcodeUnitTest
+LogPluginManager: Mounting plugin OnlineSubsystemNull
+LogPluginManager: Mounting plugin OnlineSubsystem
+LogPluginManager: Mounting plugin OnlineSubsystemUtils
+LogPluginManager: Mounting plugin LauncherChunkInstaller
+LogPluginManager: Mounting plugin AndroidPermission
+LogPluginManager: Mounting plugin AppleImageUtils
+LogPluginManager: Mounting plugin ArchVisCharacter
+LogPluginManager: Mounting plugin AssetTags
+LogPluginManager: Mounting plugin AudioCapture
+LogPluginManager: Mounting plugin CableComponent
+LogPluginManager: Mounting plugin CustomMeshComponent
+LogPluginManager: Mounting plugin ExampleDeviceProfileSelector
+LogPluginManager: Mounting plugin GooglePAD
+LogPluginManager: Mounting plugin LocationServicesBPLibrary
+LogPluginManager: Mounting plugin MobilePatchingUtils
+LogPluginManager: Mounting plugin OculusVR
+LogPluginManager: Mounting plugin RuntimePhysXCooking
+LogPluginManager: Mounting plugin SoundFields
+LogPluginManager: Mounting plugin SteamVR
+LogPluginManager: Mounting plugin Synthesis
+LogPluginManager: Mounting plugin WebMMoviePlayer
+LogPluginManager: Mounting plugin WebMMedia
+LogPluginManager: Mounting plugin WindowsMoviePlayer
+LogInit: Using libcurl 7.55.1-DEV
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.1.1
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - MaxHostConnections = 16  - Libcurl will limit the number of connections to a host
+LogInit:  - LocalHostAddr = Default
+LogInit:  - BufferSize = 65536
+LogOnline: OSS: Creating online subsystem instance for: NULL
+LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+LogOnline: OSS: TryLoadSubsystemAndSetDefault: Loaded subsystem for module [NULL]
+LogInit: Build: ++UE4+Release-4.25-CL-13594126
+LogInit: Engine Version: 4.25.1-13594126+++UE4+Release-4.25
+LogInit: Compatible Engine Version: 4.25.0-13144385+++UE4+Release-4.25
+LogInit: Net CL: 13144385
+LogInit: OS: Windows 10 (Release 2004) (), CPU: Intel(R) Core(TM) i7-7700HQ CPU @ 2.80GHz, GPU: NVIDIA GeForce GTX 1060
+LogInit: Compiled (64-bit): Jun  2 2020 06:19:14
+LogInit: Compiled with Visual C++: 19.16.27032.01
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.25
+LogInit: Command Line: 
+LogInit: Base Directory: C:/Users/Yash Soni/Documents/Unreal Projects/experimental/binaries/WindowsNoEditor/FlipkartGrid/Binaries/Win64/
+LogInit: Allocator: binned2
+LogInit: Installed Engine Build: 0
+LogDevObjectVersion: Number of dev versions registered: 26
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 10
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 4
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 38
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 37
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 2
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 4
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 43
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 12
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 3
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogDevObjectVersion:   Private-Geometry (6EACA3D4-40EC-4CC1-B786-8BED09428FC5): 3
+LogDevObjectVersion:   Dev-AnimPhys (29E575DD-E0A3-4627-9D10-D276232CDCEA): 17
+LogDevObjectVersion:   Dev-Anim (AF43A65D-7FD3-4947-9873-3E8ED9C1BB05): 7
+LogDevObjectVersion:   Dev-ReflectionCapture (6B266CEC-1EC7-4B8F-A30B-E4D90942FC07): 1
+LogDevObjectVersion:   Dev-Automation (0DF73D61-A23F-47EA-B727-89E90C41499A): 1
+LogDevObjectVersion:   FortniteMain (601D1886-AC64-4F84-AA16-D3DE0DEAC7D6): 31
+LogDevObjectVersion:   Dev-Enterprise (9DFFBCD6-494F-0158-E221-12823C92A888): 10
+LogDevObjectVersion:   Dev-Niagara (F2AED0AC-9AFE-416F-8664-AA7FFA26D6FC): 1
+LogDevObjectVersion:   Dev-Destruction (174F1F0B-B4C6-45A5-B13F-2EE8D0FB917D): 10
+LogDevObjectVersion:   Dev-Physics-Ext (35F94A83-E258-406C-A318-09F59610247C): 37
+LogDevObjectVersion:   Dev-PhysicsMaterial-Chaos (B68FC16E-8B1B-42E2-B453-215C058844FE): 1
+LogDevObjectVersion:   Dev-CineCamera (B2E18506-4273-CFC2-A54E-F4BB758BBA07): 1
+LogInit: Presizing for max 2097152 objects, including 1 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [../../../FlipkartGrid/Saved/Config/WindowsNoEditor/Engine.ini]
+LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
+LogStreaming: Display: Async Loading initialized: Event Driven Loader: true, Async Loading Thread: false, Async Post Load: true
+LogInit: Object subsystem initialized
+LogConfig: Setting CVar [[con.DebugEarlyDefault:1]]
+LogConfig: Setting CVar [[r.setres:1280x720]]
+LogConfig: Setting CVar [[fx.NiagaraAllowRuntimeScalabilityChanges:1]]
+[2020.07.26-16.45.55:816][  0]LogConfig: Setting CVar [[con.DebugEarlyDefault:1]]
+[2020.07.26-16.45.55:816][  0]LogConfig: Setting CVar [[r.setres:1280x720]]
+[2020.07.26-16.45.55:816][  0]LogConfig: Setting CVar [[fx.NiagaraAllowRuntimeScalabilityChanges:1]]
+[2020.07.26-16.45.55:816][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [../../../FlipkartGrid/Saved/Config/WindowsNoEditor/Engine.ini]
+[2020.07.26-16.45.55:816][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
+[2020.07.26-16.45.55:816][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [../../../FlipkartGrid/Saved/Config/WindowsNoEditor/Engine.ini]
+[2020.07.26-16.45.55:816][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [../../../FlipkartGrid/Saved/Config/WindowsNoEditor/Engine.ini]
+[2020.07.26-16.45.55:816][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+[2020.07.26-16.45.55:816][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+[2020.07.26-16.45.55:816][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+[2020.07.26-16.45.55:816][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+[2020.07.26-16.45.55:816][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+[2020.07.26-16.45.55:816][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+[2020.07.26-16.45.55:816][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+[2020.07.26-16.45.55:816][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+[2020.07.26-16.45.55:816][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+[2020.07.26-16.45.55:816][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+[2020.07.26-16.45.55:816][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+[2020.07.26-16.45.55:816][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+[2020.07.26-16.45.55:816][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+[2020.07.26-16.45.55:816][  0]LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
+[2020.07.26-16.45.55:816][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [../../../FlipkartGrid/Saved/Config/WindowsNoEditor/Engine.ini]
+[2020.07.26-16.45.55:816][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
+[2020.07.26-16.45.55:816][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
+[2020.07.26-16.45.55:816][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
+[2020.07.26-16.45.55:816][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
+[2020.07.26-16.45.55:816][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
+[2020.07.26-16.45.55:816][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
+[2020.07.26-16.45.55:816][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:25165824]]
+[2020.07.26-16.45.55:816][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
+[2020.07.26-16.45.55:816][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
+[2020.07.26-16.45.55:816][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
+[2020.07.26-16.45.55:816][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
+[2020.07.26-16.45.55:816][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
+[2020.07.26-16.45.55:816][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
+[2020.07.26-16.45.55:816][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [../../../FlipkartGrid/Saved/Config/WindowsNoEditor/Engine.ini]
+[2020.07.26-16.45.55:820][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [../../../FlipkartGrid/Saved/Config/WindowsNoEditor/Scalability.ini]
+[2020.07.26-16.45.55:820][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2020.07.26-16.45.55:820][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2020.07.26-16.45.55:820][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [../../../FlipkartGrid/Saved/Config/WindowsNoEditor/Scalability.ini]
+[2020.07.26-16.45.55:820][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2020.07.26-16.45.55:820][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [../../../FlipkartGrid/Saved/Config/WindowsNoEditor/Scalability.ini]
+[2020.07.26-16.45.55:820][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2020.07.26-16.45.55:820][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2020.07.26-16.45.55:820][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2020.07.26-16.45.55:820][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2020.07.26-16.45.55:820][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2020.07.26-16.45.55:820][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2020.07.26-16.45.55:820][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2020.07.26-16.45.55:820][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2020.07.26-16.45.55:820][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2020.07.26-16.45.55:820][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2020.07.26-16.45.55:820][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2020.07.26-16.45.55:820][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2020.07.26-16.45.55:820][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2020.07.26-16.45.55:820][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2020.07.26-16.45.55:820][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2020.07.26-16.45.55:820][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2020.07.26-16.45.55:820][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2020.07.26-16.45.55:820][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2020.07.26-16.45.55:820][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [../../../FlipkartGrid/Saved/Config/WindowsNoEditor/Scalability.ini]
+[2020.07.26-16.45.55:820][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2020.07.26-16.45.55:820][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2020.07.26-16.45.55:820][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2020.07.26-16.45.55:820][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2020.07.26-16.45.55:820][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2020.07.26-16.45.55:820][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2020.07.26-16.45.55:820][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2020.07.26-16.45.55:820][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2020.07.26-16.45.55:820][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2020.07.26-16.45.55:820][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2020.07.26-16.45.55:820][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2020.07.26-16.45.55:820][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2020.07.26-16.45.55:820][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2020.07.26-16.45.55:820][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2020.07.26-16.45.55:820][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2020.07.26-16.45.55:820][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2020.07.26-16.45.55:820][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2020.07.26-16.45.55:820][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2020.07.26-16.45.55:820][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2020.07.26-16.45.55:820][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2020.07.26-16.45.55:820][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2020.07.26-16.45.55:820][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2020.07.26-16.45.55:820][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2020.07.26-16.45.55:820][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2020.07.26-16.45.55:820][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2020.07.26-16.45.55:820][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2020.07.26-16.45.55:820][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2020.07.26-16.45.55:820][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2020.07.26-16.45.55:820][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2020.07.26-16.45.55:820][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2020.07.26-16.45.55:820][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [../../../FlipkartGrid/Saved/Config/WindowsNoEditor/Scalability.ini]
+[2020.07.26-16.45.55:820][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2020.07.26-16.45.55:820][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2020.07.26-16.45.55:820][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2020.07.26-16.45.55:820][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2020.07.26-16.45.55:821][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2020.07.26-16.45.55:821][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2020.07.26-16.45.55:821][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2020.07.26-16.45.55:821][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2020.07.26-16.45.55:821][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2020.07.26-16.45.55:821][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [../../../FlipkartGrid/Saved/Config/WindowsNoEditor/Scalability.ini]
+[2020.07.26-16.45.55:821][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2020.07.26-16.45.55:821][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2020.07.26-16.45.55:821][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2020.07.26-16.45.55:821][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2020.07.26-16.45.55:821][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2020.07.26-16.45.55:821][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2020.07.26-16.45.55:821][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2020.07.26-16.45.55:821][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2020.07.26-16.45.55:821][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2020.07.26-16.45.55:821][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2020.07.26-16.45.55:821][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2020.07.26-16.45.55:821][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
+[2020.07.26-16.45.55:821][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2020.07.26-16.45.55:821][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2020.07.26-16.45.55:821][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2020.07.26-16.45.55:821][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2020.07.26-16.45.55:821][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountPerSlice:1]]
+[2020.07.26-16.45.55:821][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2020.07.26-16.45.55:821][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2020.07.26-16.45.55:821][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2020.07.26-16.45.55:821][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:32.0]]
+[2020.07.26-16.45.55:821][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2020.07.26-16.45.55:821][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:32.0]]
+[2020.07.26-16.45.55:821][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2020.07.26-16.45.55:821][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2020.07.26-16.45.55:821][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2020.07.26-16.45.55:821][  0]LogConfig: Setting CVar [[fx.Niagara.QualityLevel:3]]
+[2020.07.26-16.45.55:821][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [../../../FlipkartGrid/Saved/Config/WindowsNoEditor/Scalability.ini]
+[2020.07.26-16.45.55:821][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2020.07.26-16.45.55:821][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2020.07.26-16.45.55:821][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [../../../FlipkartGrid/Saved/Config/WindowsNoEditor/Scalability.ini]
+[2020.07.26-16.45.55:821][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.SampleCount:16]]
+[2020.07.26-16.45.55:821][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.JitterIntegration:0]]
+[2020.07.26-16.45.55:821][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:16]]
+[2020.07.26-16.45.55:821][  0]LogConfig: Setting CVar [[r.HairStrands.DeepShadow.SuperSampling:0]]
+[2020.07.26-16.45.55:821][  0]LogConfig: Setting CVar [[r.HairStrands.VisibilityPPLL:0]]
+[2020.07.26-16.45.55:821][  0]LogConfig: Setting CVar [[r.HairStrands.RasterizationScale:0.5]]
+[2020.07.26-16.45.55:821][  0]LogConfig: Setting CVar [[r.HairStrands.VelocityRasterizationScale:1]]
+[2020.07.26-16.45.55:821][  0]LogInit: Selected Device Profile: [WindowsNoEditor]
+[2020.07.26-16.45.55:821][  0]LogInit: Applying CVar settings loaded from the selected device profile: [WindowsNoEditor]
+[2020.07.26-16.45.55:821][  0]LogHAL: Display: Platform has ~ 8 GB [8453046272 / 8589934592 / 8], which maps to Default [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2020.07.26-16.45.55:821][  0]LogInit: Going up to parent DeviceProfile [Windows]
+[2020.07.26-16.45.55:821][  0]LogInit: Going up to parent DeviceProfile []
+[2020.07.26-16.45.55:821][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [../../../FlipkartGrid/Saved/Config/WindowsNoEditor/Scalability.ini]
+[2020.07.26-16.45.55:821][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2020.07.26-16.45.55:821][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2020.07.26-16.45.55:821][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [../../../FlipkartGrid/Saved/Config/WindowsNoEditor/Scalability.ini]
+[2020.07.26-16.45.55:821][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2020.07.26-16.45.55:821][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [../../../FlipkartGrid/Saved/Config/WindowsNoEditor/Scalability.ini]
+[2020.07.26-16.45.55:821][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2020.07.26-16.45.55:821][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2020.07.26-16.45.55:822][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2020.07.26-16.45.55:822][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2020.07.26-16.45.55:822][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2020.07.26-16.45.55:822][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2020.07.26-16.45.55:822][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2020.07.26-16.45.55:822][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2020.07.26-16.45.55:822][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2020.07.26-16.45.55:822][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2020.07.26-16.45.55:822][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2020.07.26-16.45.55:822][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2020.07.26-16.45.55:822][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2020.07.26-16.45.55:822][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2020.07.26-16.45.55:822][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2020.07.26-16.45.55:822][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2020.07.26-16.45.55:822][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2020.07.26-16.45.55:822][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2020.07.26-16.45.55:822][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [../../../FlipkartGrid/Saved/Config/WindowsNoEditor/Scalability.ini]
+[2020.07.26-16.45.55:822][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2020.07.26-16.45.55:822][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2020.07.26-16.45.55:822][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2020.07.26-16.45.55:822][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2020.07.26-16.45.55:822][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2020.07.26-16.45.55:822][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2020.07.26-16.45.55:822][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2020.07.26-16.45.55:822][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2020.07.26-16.45.55:822][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2020.07.26-16.45.55:822][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2020.07.26-16.45.55:822][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2020.07.26-16.45.55:822][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2020.07.26-16.45.55:822][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2020.07.26-16.45.55:822][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2020.07.26-16.45.55:822][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2020.07.26-16.45.55:822][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2020.07.26-16.45.55:822][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2020.07.26-16.45.55:822][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2020.07.26-16.45.55:822][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2020.07.26-16.45.55:822][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2020.07.26-16.45.55:822][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2020.07.26-16.45.55:822][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2020.07.26-16.45.55:822][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2020.07.26-16.45.55:822][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2020.07.26-16.45.55:822][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2020.07.26-16.45.55:822][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2020.07.26-16.45.55:822][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2020.07.26-16.45.55:822][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2020.07.26-16.45.55:822][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2020.07.26-16.45.55:822][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2020.07.26-16.45.55:822][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [../../../FlipkartGrid/Saved/Config/WindowsNoEditor/Scalability.ini]
+[2020.07.26-16.45.55:822][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2020.07.26-16.45.55:822][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2020.07.26-16.45.55:822][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2020.07.26-16.45.55:822][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2020.07.26-16.45.55:822][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2020.07.26-16.45.55:822][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2020.07.26-16.45.55:822][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2020.07.26-16.45.55:822][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2020.07.26-16.45.55:822][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2020.07.26-16.45.55:822][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [../../../FlipkartGrid/Saved/Config/WindowsNoEditor/Scalability.ini]
+[2020.07.26-16.45.55:822][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2020.07.26-16.45.55:822][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2020.07.26-16.45.55:822][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2020.07.26-16.45.55:822][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2020.07.26-16.45.55:822][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2020.07.26-16.45.55:822][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2020.07.26-16.45.55:822][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2020.07.26-16.45.55:822][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2020.07.26-16.45.55:822][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2020.07.26-16.45.55:823][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2020.07.26-16.45.55:823][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2020.07.26-16.45.55:823][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
+[2020.07.26-16.45.55:823][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2020.07.26-16.45.55:823][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2020.07.26-16.45.55:823][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2020.07.26-16.45.55:823][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2020.07.26-16.45.55:823][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountPerSlice:1]]
+[2020.07.26-16.45.55:823][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2020.07.26-16.45.55:823][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2020.07.26-16.45.55:823][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2020.07.26-16.45.55:823][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:32.0]]
+[2020.07.26-16.45.55:823][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2020.07.26-16.45.55:823][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:32.0]]
+[2020.07.26-16.45.55:823][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2020.07.26-16.45.55:823][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2020.07.26-16.45.55:823][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2020.07.26-16.45.55:823][  0]LogConfig: Setting CVar [[fx.Niagara.QualityLevel:3]]
+[2020.07.26-16.45.55:823][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [../../../FlipkartGrid/Saved/Config/WindowsNoEditor/Scalability.ini]
+[2020.07.26-16.45.55:823][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2020.07.26-16.45.55:823][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2020.07.26-16.45.55:823][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [../../../FlipkartGrid/Saved/Config/WindowsNoEditor/Scalability.ini]
+[2020.07.26-16.45.55:823][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.SampleCount:16]]
+[2020.07.26-16.45.55:823][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.JitterIntegration:0]]
+[2020.07.26-16.45.55:823][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:16]]
+[2020.07.26-16.45.55:823][  0]LogConfig: Setting CVar [[r.HairStrands.DeepShadow.SuperSampling:0]]
+[2020.07.26-16.45.55:823][  0]LogConfig: Setting CVar [[r.HairStrands.VisibilityPPLL:0]]
+[2020.07.26-16.45.55:823][  0]LogConfig: Setting CVar [[r.HairStrands.RasterizationScale:0.5]]
+[2020.07.26-16.45.55:823][  0]LogConfig: Setting CVar [[r.HairStrands.VelocityRasterizationScale:1]]
+[2020.07.26-16.45.55:823][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
+[2020.07.26-16.45.55:823][  0]LogConfig: Setting CVar [[net.UseAdaptiveNetUpdateFrequency:0]]
+[2020.07.26-16.45.55:823][  0]LogConfig: Setting CVar [[p.chaos.AllowCreatePhysxBodies:1]]
+[2020.07.26-16.45.55:823][  0]LogConfig: Setting CVar [[fx.SkipVectorVMBackendOptimizations:1]]
+[2020.07.26-16.45.55:823][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [../../../FlipkartGrid/Saved/Config/WindowsNoEditor/Engine.ini]
+[2020.07.26-16.45.55:823][  0]LogInit: Computer: DESKTOP-QAR2BJB
+[2020.07.26-16.45.55:823][  0]LogInit: User: YashSoni
+[2020.07.26-16.45.55:823][  0]LogInit: CPU Page size=4096, Cores=4
+[2020.07.26-16.45.55:823][  0]LogInit: High frequency timer resolution =10.000000 MHz
+[2020.07.26-16.45.55:823][  0]LogMemory: Memory total: Physical=7.9GB (8GB approx)
+[2020.07.26-16.45.55:823][  0]LogMemory: Platform Memory Stats for WindowsNoEditor
+[2020.07.26-16.45.55:823][  0]LogMemory: Process Physical Memory: 66.05 MB used, 66.05 MB peak
+[2020.07.26-16.45.55:823][  0]LogMemory: Process Virtual Memory: 72.52 MB used, 72.52 MB peak
+[2020.07.26-16.45.55:823][  0]LogMemory: Physical Memory: 7525.09 MB used,  536.36 MB free, 8061.45 MB total
+[2020.07.26-16.45.55:824][  0]LogMemory: Virtual Memory: 4973.28 MB used,  134212752.00 MB free, 134217728.00 MB total
+[2020.07.26-16.45.55:829][  0]LogWindows: WindowsPlatformFeatures enabled
+[2020.07.26-16.45.55:844][  0]LogInit: Physics initialised using underlying interface: PhysX
+[2020.07.26-16.45.55:845][  0]LogInit: Using OS detected language (en-US).
+[2020.07.26-16.45.55:845][  0]LogInit: Using OS detected locale (en-IN).
+[2020.07.26-16.45.55:845][  0]LogTextLocalizationManager: No specific localization for 'en-US' exists, so the 'en' localization will be used.
+[2020.07.26-16.45.55:882][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
+[2020.07.26-16.45.55:882][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2020.07.26-16.45.55:895][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2020.07.26-16.45.55:895][  0]LogD3D11RHI: D3D11 min allowed feature level: 11_0
+[2020.07.26-16.45.55:895][  0]LogD3D11RHI: D3D11 max allowed feature level: 11_0
+[2020.07.26-16.45.55:895][  0]LogD3D11RHI: D3D11 adapters:
+[2020.07.26-16.45.55:982][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 1060' (Feature Level 11_0)
+[2020.07.26-16.45.55:982][  0]LogD3D11RHI:       6052/0/4030 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
+[2020.07.26-16.45.56:024][  0]LogD3D11RHI:    1. 'Intel(R) HD Graphics 630' (Feature Level 11_0)
+[2020.07.26-16.45.56:024][  0]LogD3D11RHI:       128/0/4030 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x8086
+[2020.07.26-16.45.56:028][  0]LogD3D11RHI:    2. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2020.07.26-16.45.56:028][  0]LogD3D11RHI:       0/0/4030 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2020.07.26-16.45.56:028][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2020.07.26-16.45.56:041][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2020.07.26-16.45.56:041][  0]LogD3D11RHI:     GPU DeviceId: 0x1c60 (for the marketing name, search the web for "GPU Device Id")
+[2020.07.26-16.45.56:041][  0]LogWindows: EnumDisplayDevices:
+[2020.07.26-16.45.56:041][  0]LogWindows:    0. 'NVIDIA GeForce GTX 1060' (P:1 D:1)
+[2020.07.26-16.45.56:041][  0]LogWindows:    1. 'NVIDIA GeForce GTX 1060' (P:0 D:0)
+[2020.07.26-16.45.56:042][  0]LogWindows:    2. 'NVIDIA GeForce GTX 1060' (P:0 D:0)
+[2020.07.26-16.45.56:042][  0]LogWindows:    3. 'NVIDIA GeForce GTX 1060' (P:0 D:0)
+[2020.07.26-16.45.56:042][  0]LogWindows:    4. 'Intel(R) HD Graphics 630' (P:0 D:0)
+[2020.07.26-16.45.56:043][  0]LogWindows:    5. 'Intel(R) HD Graphics 630' (P:0 D:0)
+[2020.07.26-16.45.56:043][  0]LogWindows:    6. 'Intel(R) HD Graphics 630' (P:0 D:0)
+[2020.07.26-16.45.56:043][  0]LogWindows: DebugString: PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter FoundDriverCount:4 
+[2020.07.26-16.45.56:043][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 1060
+[2020.07.26-16.45.56:043][  0]LogD3D11RHI:   Driver Version: 431.53 (internal:26.21.14.3153, unified:431.53)
+[2020.07.26-16.45.56:043][  0]LogD3D11RHI:      Driver Date: 7-12-2019
+[2020.07.26-16.45.56:043][  0]LogRHI: Texture pool is 4236 MB (70% of 6052 MB)
+[2020.07.26-16.45.56:118][  0]LogD3D11RHI: RHI has support for 64 bit atomics
+[2020.07.26-16.45.56:118][  0]LogD3D11RHI: Async texture creation enabled
+[2020.07.26-16.45.56:118][  0]LogD3D11RHI: Array index from any shader is supported
+[2020.07.26-16.45.56:181][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2020.07.26-16.45.56:183][  0]LogShaderLibrary: Display: Using ../../../FlipkartGrid/Content/ShaderArchive-Global-PCD3D_SM5.ushaderbytecode for material shader code. Total 2058 unique shaders.
+[2020.07.26-16.45.56:183][  0]LogShaderLibrary: Display: Cooked Context: Using Shared Shader Library Global
+[2020.07.26-16.45.56:185][  0]LogTemp: Warning: Clearing the OS Cache
+[2020.07.26-16.45.56:188][  0]LogPakFile: New pak file ../../../FlipkartGrid/Content/Paks/FlipkartGrid-WindowsNoEditor.pak added to pak precacher.
+[2020.07.26-16.45.56:213][  0]LogSlate: Using FreeType 2.10.0
+[2020.07.26-16.45.56:214][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2020.07.26-16.45.56:260][  0]LogShaderLibrary: Display: Using ../../../FlipkartGrid/Content/ShaderArchive-FlipkartGrid-PCD3D_SM5.ushaderbytecode for material shader code. Total 2194 unique shaders.
+[2020.07.26-16.45.56:260][  0]LogShaderLibrary: Display: Cooked Context: Using Shared Shader Library FlipkartGrid
+[2020.07.26-16.45.56:261][  0]LogRHI: Display: Opened pipeline cache after state change and enqueued 0 of 0 tasks for precompile.
+[2020.07.26-16.45.56:261][  0]LogRHI: Display: Failed to open default shader pipeline cache for FlipkartGrid using shader platform 0.
+[2020.07.26-16.45.56:261][  0]LogRHI: Display: Failed to open default shader pipeline cache for FlipkartGrid using shader platform 0.
+[2020.07.26-16.45.56:261][  0]LogInit: Using OS detected language (en-US).
+[2020.07.26-16.45.56:261][  0]LogInit: Using OS detected locale (en-IN).
+[2020.07.26-16.45.56:261][  0]LogTextLocalizationManager: No localization for 'en-US' exists, so 'en' will be used for the language.
+[2020.07.26-16.45.56:262][  0]LogTextLocalizationManager: No localization for 'en-IN' exists, so 'en' will be used for the locale.
+[2020.07.26-16.45.56:262][  0]LogSlate: FontCache flush requested. Reason: Culture for localization was changed
+[2020.07.26-16.45.56:262][  0]LogSlate: FontCache flush requested. Reason: Culture for localization was changed
+[2020.07.26-16.45.56:263][  0]LogTextLocalizationManager: Compacting localization data took   0.90ms
+[2020.07.26-16.45.56:273][  0]LogAssetRegistry: FAssetRegistry took 0.0091 seconds to start up
+[2020.07.26-16.45.56:374][  0]LogStreaming: Display: Flushing async loaders.
+[2020.07.26-16.45.56:374][  0]LogPackageLocalizationCache: Processed 19 localized package path(s) for 1 prioritized culture(s) in 0.000067 seconds
+[2020.07.26-16.45.56:377][  0]LogInit: Selected Device Profile: [WindowsNoEditor]
+[2020.07.26-16.45.56:389][  0]LogNetVersion: FlipkartGrid 1.0.0, NetCL: 13144385, EngineNetVer: 14, GameNetVer: 0 (Checksum: 4195216414)
+[2020.07.26-16.45.56:522][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2020.07.26-16.45.56:522][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2020.07.26-16.45.56:578][  0]LogAISub: UAISubsystem::UAISubsystem AISubsystem (00000162F2ACF140), frame # 0
+[2020.07.26-16.45.56:578][  0]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (00000162F2355380), frame # 0
+[2020.07.26-16.45.56:584][  0]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (00000162F3A45C00), frame # 0
+[2020.07.26-16.45.56:617][  0]LogMoviePlayer: Initializing movie player
+[2020.07.26-16.45.56:620][  0]LogTemp: StartupModule: AirSim plugin
+[2020.07.26-16.45.56:633][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2020.07.26-16.45.56:634][  0]LogOcInput: OculusInput pre-init called
+[2020.07.26-16.45.56:638][  0]LogUObjectArray: 14624 objects as part of root set at end of initial load.
+[2020.07.26-16.45.56:638][  0]LogUObjectArray: 2 objects are not in the root set, but can never be destroyed because they are in the DisregardForGC set.
+[2020.07.26-16.45.56:638][  0]LogUObjectAllocator: 3034520 out of 0 bytes used by permanent object pool.
+[2020.07.26-16.45.56:638][  0]LogUObjectArray: CloseDisregardForGC: 14624/14624 objects in disregard for GC pool
+[2020.07.26-16.45.56:642][  0]LogEngine: Initializing Engine...
+[2020.07.26-16.45.56:645][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2020.07.26-16.45.56:648][  0]LogStats: UGameplayTagsManager::InitializeManager -  0.001 s
+[2020.07.26-16.45.56:761][  0]LogPakFile: Precache HighWater 16MB
+
+[2020.07.26-16.45.56:761][  0]LogPakFile: Precache HighWater 32MB
+
+[2020.07.26-16.45.56:761][  0]LogInit: Initializing FReadOnlyCVARCache
+[2020.07.26-16.45.56:764][  0]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.07.26-16.45.56:764][  0]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.07.26-16.45.56:764][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.07.26-16.45.56:764][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.07.26-16.45.56:764][  0]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.07.26-16.45.56:764][  0]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.07.26-16.45.56:764][  0]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.07.26-16.45.56:764][  0]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.07.26-16.45.56:765][  0]LogAudio: Display: Using built-in audio occlusion.
+[2020.07.26-16.45.56:765][  0]LogAudioMixer: Display: Initializing audio mixer.
+[2020.07.26-16.45.56:781][  0]LogAudioDebug: Display: Lib vorbis DLL was dynamically loaded.
+[2020.07.26-16.45.56:845][  0]LogAudioMixer: Display: 0: FrontLeft
+[2020.07.26-16.45.56:845][  0]LogAudioMixer: Display: 1: FrontRight
+[2020.07.26-16.45.56:880][  0]LogAudioMixer: Display: Using Audio Device Headphones (boAt Rockerz 380 Stereo)
+[2020.07.26-16.45.56:882][  0]LogAudioMixer: Display: Initializing Sound Submixes...
+[2020.07.26-16.45.56:883][  0]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2020.07.26-16.45.56:884][  0]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2020.07.26-16.45.56:885][  0]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2020.07.26-16.45.56:887][  0]LogInit: FAudioDevice initialized.
+[2020.07.26-16.45.56:889][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
+[2020.07.26-16.45.56:889][  0]LogInit: Texture streaming: Enabled
+[2020.07.26-16.45.56:942][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.07.26-16.45.56:945][  0]LogInit: Display: Game Engine Initialized.
+[2020.07.26-16.45.56:948][  0]LogInit: Display: Starting Game.
+[2020.07.26-16.45.56:949][  0]LogNet: Browse: /Game/Main/Map/FramesStatic?Name=Player
+[2020.07.26-16.45.56:949][  0]LogLoad: LoadMap: /Game/Main/Map/FramesStatic?Name=Player
+[2020.07.26-16.45.56:949][  0]LogWorld: BeginTearingDown for /Temp/Untitled_0
+[2020.07.26-16.45.56:957][  0]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
+[2020.07.26-16.45.56:959][  0]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.07.26-16.45.56:975][  0]LogUObjectHash: Compacting FUObjectHashTables data took   1.20ms
+[2020.07.26-16.45.57:003][  0]LogAIModule: Creating AISystem for world FramesStatic
+[2020.07.26-16.45.57:003][  0]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (00000162E422C600), frame # 0
+[2020.07.26-16.45.57:003][  0]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (00000162C9B0EFC0), frame # 0
+[2020.07.26-16.45.57:004][  0]LogLoad: Game class is 'AirSimGameMode'
+[2020.07.26-16.45.57:015][  0]LogWorld: Bringing World /Game/Main/Map/FramesStatic.FramesStatic up for play (max tick rate 0) at 2020.07.26-22.15.57
+[2020.07.26-16.45.57:016][  0]LogWorld: Bringing up level for play took: 0.010194
+[2020.07.26-16.45.57:041][  0]r.CustomDepth = "3"
+[2020.07.26-16.45.57:042][  0]LogActor: Warning: BP_CameraDirector_C /Game/Main/Map/FramesStatic.FramesStatic:PersistentLevel.CameraDirector has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2020.07.26-16.45.57:060][  0]LogPhysics: Warning: UWorld::FindTeleportSpot called with an actor that is intersecting geometry. Failed to find new location likely due to  actor's root component not being a collider component.
+[2020.07.26-16.45.57:101][  0]LogScript: Warning: Script Msg: Attempted to access index 0 from array 'CallFunc_GetAllActorsOfClass_OutActors' of length 0 in '/AirSim/Weather/WeatherFX/WeatherActor.WeatherActor_C:ExecuteUbergraph_WeatherActor'!
+[2020.07.26-16.45.57:109][  0]LogTemp: SimpleFlight
+[2020.07.26-16.45.57:110][  0]LogUMG: Display: Widget Class BP_SimHUDWidget_C - Loaded Fast Template.
+[2020.07.26-16.45.57:122][  0]LogLoad: Took 0.173105 seconds to LoadMap(/Game/Main/Map/FramesStatic)
+[2020.07.26-16.45.57:129][  0]LogSlate: Took 0.000926 seconds to synchronously load lazily loaded font '../../../Engine/Content/EngineFonts/Faces/RobotoBold.ufont' (160K)
+[2020.07.26-16.45.57:146][  0]LogSlate: Took 0.001375 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2020.07.26-16.45.57:158][  0]LogRenderer: Reallocating scene render targets to support 1536x864 Format 10 NumSamples 1 (Frame:1).
+[2020.07.26-16.45.57:158][  0]LogRHI: Display: ShaderPipelineCache: Paused Batching. 1
+[2020.07.26-16.45.57:158][  0]LogRHI: Display: ShaderPipelineCache: Resumed Batching. 0
+[2020.07.26-16.45.57:158][  0]LogRHI: Display: ShaderPipelineCache: Batching Resumed.
+[2020.07.26-16.45.57:158][  0]LogLoad: (Engine Initialization) Total time: 1.64 seconds
+[2020.07.26-16.45.57:267][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2020.07.26-16.45.57:278][  0]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.07.26-16.45.57:317][  0]LogSlate: Slate font cache was flushed
+[2020.07.26-16.45.57:387][  1]LogSlate: Took 0.000093 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2020.07.26-16.47.00:335][962]LogWindowsDesktop: Alt-F4 pressed!
+[2020.07.26-16.47.00:335][962]LogSlate: Request Window 'FlipkartGrid (64-bit Development PCD3D_SM5) ' being destroyed
+[2020.07.26-16.47.00:366][962]LogSlate: Window 'FlipkartGrid (64-bit Development PCD3D_SM5) ' being destroyed
+[2020.07.26-16.47.00:368][962]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
+[2020.07.26-16.47.00:385][962]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.07.26-16.47.00:385][962]LogEngine: All Windows Closed
+[2020.07.26-16.47.00:385][962]LogWindows: FPlatformMisc::RequestExit(0)
+[2020.07.26-16.47.00:385][962]LogCore: Engine exit requested (reason: Win RequestExit)
+[2020.07.26-16.47.00:386][963]LogCore: Engine exit requested (reason: EngineExit() was called; note: exit was already requested)
+[2020.07.26-16.47.00:388][963]LogAudio: Display: Shutting down audio device while 2 references to it are still alive. For more information, compile with INSTRUMENT_AUDIODEVICE_HANDLES.
+[2020.07.26-16.47.00:400][963]LogInit: Display: PreExit Game.
+[2020.07.26-16.47.00:419][963]LogWorld: BeginTearingDown for /Game/Main/Map/FramesStatic
+[2020.07.26-16.47.00:420][963]LogWorld: UWorld::CleanupWorld for FramesStatic, bSessionEnded=true, bCleanupResources=true
+[2020.07.26-16.47.00:423][963]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.07.26-16.47.00:699][963]LogExit: Preparing to exit.
+[2020.07.26-16.47.00:699][963]LogMoviePlayer: Shutting down movie player
+[2020.07.26-16.47.00:710][963]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.07.26-16.47.00:712][963]LogDemo: Cleaned up 0 splitscreen connections with owner deletion
+[2020.07.26-16.47.00:715][963]LogExit: Game engine shut down
+[2020.07.26-16.47.00:731][963]LogAISub: UAISubsystem::~UAISubsystem AISubsystem (00000162F2ACF140), frame # 4963
+[2020.07.26-16.47.00:731][963]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (00000162F2355380), frame # 4963
+[2020.07.26-16.47.00:732][963]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (00000162F3A45C00), frame # 4963
+[2020.07.26-16.47.00:733][963]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (00000162E422C600), frame # 4963
+[2020.07.26-16.47.00:733][963]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (00000162C9B0EFC0), frame # 4963
+[2020.07.26-16.47.00:751][963]LogExit: Object subsystem successfully closed.
+[2020.07.26-16.47.00:772][963]LogModuleManager: Shutting down and abandoning module AutomationController (320)
+[2020.07.26-16.47.00:773][963]LogModuleManager: Shutting down and abandoning module AutomationWorker (318)
+[2020.07.26-16.47.00:773][963]LogModuleManager: Shutting down and abandoning module Voice (316)
+[2020.07.26-16.47.00:773][963]LogModuleManager: Shutting down and abandoning module AIModule (314)
+[2020.07.26-16.47.00:773][963]LogModuleManager: Shutting down and abandoning module GameplayDebugger (313)
+[2020.07.26-16.47.00:773][963]LogModuleManager: Shutting down and abandoning module NavigationSystem (311)
+[2020.07.26-16.47.00:773][963]LogModuleManager: Shutting down and abandoning module WebMMediaFactory (308)
+[2020.07.26-16.47.00:773][963]LogModuleManager: Shutting down and abandoning module WebMMedia (306)
+[2020.07.26-16.47.00:773][963]LogModuleManager: Shutting down and abandoning module OculusMR (304)
+[2020.07.26-16.47.00:773][963]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (302)
+[2020.07.26-16.47.00:773][963]LogModuleManager: Shutting down and abandoning module OpenExrWrapper (300)
+[2020.07.26-16.47.00:773][963]LogModuleManager: Shutting down and abandoning module ImgMediaFactory (298)
+[2020.07.26-16.47.00:773][963]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (296)
+[2020.07.26-16.47.00:773][963]LogModuleManager: Shutting down and abandoning module CharacterAI (294)
+[2020.07.26-16.47.00:773][963]LogModuleManager: Shutting down and abandoning module PlanarCut (292)
+[2020.07.26-16.47.00:773][963]LogModuleManager: Shutting down and abandoning module SessionServices (290)
+[2020.07.26-16.47.00:773][963]LogModuleManager: Shutting down and abandoning module LiveCoding (288)
+[2020.07.26-16.47.00:774][963]LogModuleManager: Shutting down and abandoning module LevelSequence (286)
+[2020.07.26-16.47.00:774][963]LogModuleManager: Shutting down and abandoning module MovieSceneTracks (284)
+[2020.07.26-16.47.00:774][963]LogModuleManager: Shutting down and abandoning module MovieScene (282)
+[2020.07.26-16.47.00:774][963]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (280)
+[2020.07.26-16.47.00:774][963]LogModuleManager: Shutting down and abandoning module AudioMixerXAudio2 (278)
+[2020.07.26-16.47.00:774][963]LogModuleManager: Shutting down and abandoning module AudioMixerCore (277)
+[2020.07.26-16.47.00:774][963]LogModuleManager: Shutting down and abandoning module ImageWriteQueue (274)
+[2020.07.26-16.47.00:774][963]LogModuleManager: Shutting down and abandoning module ProfilerService (272)
+[2020.07.26-16.47.01:012][963]LogModuleManager: Shutting down and abandoning module TaskGraph (270)
+[2020.07.26-16.47.01:013][963]LogModuleManager: Shutting down and abandoning module Synthesis (268)
+[2020.07.26-16.47.01:013][963]LogModuleManager: Shutting down and abandoning module OculusInput (266)
+[2020.07.26-16.47.01:013][963]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (264)
+[2020.07.26-16.47.01:013][963]LogModuleManager: Shutting down and abandoning module GooglePAD (262)
+[2020.07.26-16.47.01:013][963]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (260)
+[2020.07.26-16.47.01:013][963]LogModuleManager: Shutting down and abandoning module CableComponent (258)
+[2020.07.26-16.47.01:013][963]LogModuleManager: Shutting down and abandoning module AudioCapture (256)
+[2020.07.26-16.47.01:013][963]LogModuleManager: Shutting down and abandoning module AudioCaptureRtAudio (255)
+[2020.07.26-16.47.01:013][963]LogModuleManager: Shutting down and abandoning module AssetTags (252)
+[2020.07.26-16.47.01:013][963]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (250)
+[2020.07.26-16.47.01:013][963]LogModuleManager: Shutting down and abandoning module AppleImageUtils (248)
+[2020.07.26-16.47.01:013][963]LogModuleManager: Shutting down and abandoning module AndroidPermission (246)
+[2020.07.26-16.47.01:013][963]LogModuleManager: Shutting down and abandoning module TemplateSequence (244)
+[2020.07.26-16.47.01:013][963]LogModuleManager: Shutting down and abandoning module MediaCompositing (242)
+[2020.07.26-16.47.01:013][963]LogModuleManager: Shutting down and abandoning module ImgMedia (240)
+[2020.07.26-16.47.01:013][963]LogModuleManager: Shutting down and abandoning module MagicLeapLightEstimation (238)
+[2020.07.26-16.47.01:013][963]LogModuleManager: Shutting down and abandoning module MagicLeapHelperVulkan (236)
+[2020.07.26-16.47.01:013][963]LogModuleManager: Shutting down and abandoning module MagicLeapHelperOpenGL (234)
+[2020.07.26-16.47.01:013][963]LogModuleManager: Shutting down and abandoning module MagicLeapAudio (232)
+[2020.07.26-16.47.01:013][963]LogModuleManager: Shutting down and abandoning module MagicLeapSharedWorld (230)
+[2020.07.26-16.47.01:013][963]LogModuleManager: Shutting down and abandoning module ChaosNiagara (228)
+[2020.07.26-16.47.01:013][963]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (226)
+[2020.07.26-16.47.01:013][963]LogModuleManager: Shutting down and abandoning module GeometryCollectionTracks (224)
+[2020.07.26-16.47.01:013][963]LogModuleManager: Shutting down and abandoning module EditableMesh (222)
+[2020.07.26-16.47.01:013][963]LogModuleManager: Shutting down and abandoning module MeshSolverUtilities (220)
+[2020.07.26-16.47.01:013][963]LogModuleManager: Shutting down and abandoning module MeshConversion (218)
+[2020.07.26-16.47.01:013][963]LogModuleManager: Shutting down and abandoning module DynamicMesh (216)
+[2020.07.26-16.47.01:013][963]LogModuleManager: Shutting down and abandoning module GeometryAlgorithms (214)
+[2020.07.26-16.47.01:013][963]LogModuleManager: Shutting down and abandoning module GeometricObjects (212)
+[2020.07.26-16.47.01:013][963]LogModuleManager: Shutting down and abandoning module ChaosCloth (210)
+[2020.07.26-16.47.01:013][963]LogModuleManager: Shutting down and abandoning module BackChannel (208)
+[2020.07.26-16.47.01:013][963]LogModuleManager: Shutting down and abandoning module AutomationUtils (206)
+[2020.07.26-16.47.01:013][963]LogModuleManager: Shutting down and abandoning module GeometryCacheTracks (204)
+[2020.07.26-16.47.01:014][963]LogModuleManager: Shutting down and abandoning module GeometryCache (202)
+[2020.07.26-16.47.01:014][963]LogModuleManager: Shutting down and abandoning module UObjectPlugin (200)
+[2020.07.26-16.47.01:014][963]LogModuleManager: Shutting down and abandoning module FlipkartGrid (198)
+[2020.07.26-16.47.01:014][963]LogModuleManager: Shutting down and abandoning module SoundFields (196)
+[2020.07.26-16.47.01:014][963]LogModuleManager: Shutting down and abandoning module RuntimePhysXCooking (194)
+[2020.07.26-16.47.01:014][963]LogModuleManager: Shutting down and abandoning module LocationServicesBPLibrary (192)
+[2020.07.26-16.47.01:014][963]LogModuleManager: Shutting down and abandoning module ActorSequence (190)
+[2020.07.26-16.47.01:014][963]LogModuleManager: Shutting down and abandoning module UdpMessaging (188)
+[2020.07.26-16.47.01:014][963]LogModuleManager: Shutting down and abandoning module TcpMessaging (186)
+[2020.07.26-16.47.01:014][963]LogModuleManager: Shutting down and abandoning module MagicLeapHandMeshing (184)
+[2020.07.26-16.47.01:014][963]LogModuleManager: Shutting down and abandoning module MagicLeapSecureStorage (182)
+[2020.07.26-16.47.01:014][963]LogModuleManager: Shutting down and abandoning module MagicLeapPrivileges (180)
+[2020.07.26-16.47.01:014][963]LogModuleManager: Shutting down and abandoning module MagicLeapPlanes (178)
+[2020.07.26-16.47.01:014][963]LogModuleManager: Shutting down and abandoning module MagicLeapImageTracker (176)
+[2020.07.26-16.47.01:014][963]LogModuleManager: Shutting down and abandoning module MagicLeapIdentity (174)
+[2020.07.26-16.47.01:014][963]LogModuleManager: Shutting down and abandoning module MagicLeapHandTracking (172)
+[2020.07.26-16.47.01:014][963]LogModuleManager: Shutting down and abandoning module MagicLeapEyeTracker (170)
+[2020.07.26-16.47.01:014][963]LogModuleManager: Shutting down and abandoning module MagicLeapController (168)
+[2020.07.26-16.47.01:014][963]LogSlate: Slate User Destroyed.  User Index 0, Is Virtual User: 0
+[2020.07.26-16.47.01:014][963]LogModuleManager: Shutting down and abandoning module MagicLeapARPinImpl (166)
+[2020.07.26-16.47.01:014][963]LogModuleManager: Shutting down and abandoning module MagicLeapAR (164)
+[2020.07.26-16.47.01:014][963]LogModuleManager: Shutting down and abandoning module AugmentedReality (163)
+[2020.07.26-16.47.01:014][963]LogModuleManager: Shutting down and abandoning module MagicLeapARPin (160)
+[2020.07.26-16.47.01:014][963]LogModuleManager: Shutting down and abandoning module NiagaraAnimNotifies (158)
+[2020.07.26-16.47.01:014][963]LogModuleManager: Shutting down and abandoning module Niagara (156)
+[2020.07.26-16.47.01:014][963]LogModuleManager: Shutting down and abandoning module SignalProcessing (155)
+[2020.07.26-16.47.01:014][963]LogModuleManager: Shutting down and abandoning module NiagaraCore (152)
+[2020.07.26-16.47.01:014][963]LogModuleManager: Shutting down and abandoning module FacialAnimation (150)
+[2020.07.26-16.47.01:014][963]LogModuleManager: Shutting down and abandoning module SignificanceManager (148)
+[2020.07.26-16.47.01:014][963]LogModuleManager: Shutting down and abandoning module AnimationSharing (146)
+[2020.07.26-16.47.01:014][963]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (144)
+[2020.07.26-16.47.01:014][963]LogModuleManager: Shutting down and abandoning module Paper2D (142)
+[2020.07.26-16.47.01:014][963]LogModuleManager: Shutting down and abandoning module AirSim (138)
+[2020.07.26-16.47.01:015][963]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (136)
+[2020.07.26-16.47.01:015][963]LogModuleManager: Shutting down and abandoning module WebMMoviePlayer (134)
+[2020.07.26-16.47.01:015][963]LogModuleManager: Shutting down and abandoning module NetworkReplayStreaming (132)
+[2020.07.26-16.47.01:015][963]LogModuleManager: Shutting down and abandoning module PacketHandler (130)
+[2020.07.26-16.47.01:015][963]LogModuleManager: Shutting down and abandoning module ClothingSystemRuntimeNv (128)
+[2020.07.26-16.47.01:015][963]LogModuleManager: Shutting down and abandoning module MediaAssets (126)
+[2020.07.26-16.47.01:015][963]LogModuleManager: Shutting down and abandoning module Overlay (124)
+[2020.07.26-16.47.01:015][963]LogModuleManager: Shutting down and abandoning module FunctionalTesting (122)
+[2020.07.26-16.47.01:016][963]LogModuleManager: Shutting down and abandoning module MessageLog (120)
+[2020.07.26-16.47.01:016][963]LogModuleManager: Shutting down and abandoning module UMG (118)
+[2020.07.26-16.47.01:016][963]LogModuleManager: Shutting down and abandoning module SlateReflector (116)
+[2020.07.26-16.47.01:017][963]LogModuleManager: Shutting down and abandoning module Slate (114)
+[2020.07.26-16.47.01:017][963]LogModuleManager: Shutting down and abandoning module SlateCore (112)
+[2020.07.26-16.47.01:017][963]LogModuleManager: Shutting down and abandoning module MRMesh (110)
+[2020.07.26-16.47.01:017][963]LogModuleManager: Shutting down and abandoning module Messaging (108)
+[2020.07.26-16.47.01:017][963]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (106)
+[2020.07.26-16.47.01:017][963]LogModuleManager: Shutting down and abandoning module XAudio2 (104)
+[2020.07.26-16.47.01:017][963]LogModuleManager: Shutting down and abandoning module Networking (102)
+[2020.07.26-16.47.01:017][963]LogModuleManager: Shutting down and abandoning module Core (100)
+[2020.07.26-16.47.01:017][963]LogModuleManager: Shutting down and abandoning module ImageWrapper (96)
+[2020.07.26-16.47.01:017][963]LogModuleManager: Shutting down and abandoning module InputCore (94)
+[2020.07.26-16.47.01:017][963]LogModuleManager: Shutting down and abandoning module Settings (92)
+[2020.07.26-16.47.01:017][963]LogModuleManager: Shutting down and abandoning module PhysXCooking (90)
+[2020.07.26-16.47.01:017][963]LogModuleManager: Shutting down and abandoning module ChaosSolvers (88)
+[2020.07.26-16.47.01:017][963]LogModuleManager: Shutting down and abandoning module FieldSystemEngine (87)
+[2020.07.26-16.47.01:017][963]LogModuleManager: Shutting down and abandoning module Chaos (84)
+[2020.07.26-16.47.01:017][963]LogModuleManager: Shutting down and abandoning module WindowsPlatformFeatures (82)
+[2020.07.26-16.47.01:018][963]LogModuleManager: Shutting down and abandoning module GameplayMediaEncoder (81)
+[2020.07.26-16.47.01:018][963]LogModuleManager: Shutting down and abandoning module AVEncoder (80)
+[2020.07.26-16.47.01:018][963]LogModuleManager: Shutting down and abandoning module SteamVRInputDevice (76)
+[2020.07.26-16.47.01:018][963]LogModuleManager: Shutting down and abandoning module SteamVRInput (74)
+[2020.07.26-16.47.01:018][963]LogModuleManager: Shutting down and abandoning module SteamVR (72)
+[2020.07.26-16.47.01:018][963]LogHMD: Freeing OpenVRDLLHandle.
+[2020.07.26-16.47.01:018][963]LogModuleManager: Shutting down and abandoning module OculusHMD (70)
+[2020.07.26-16.47.01:018][963]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (68)
+[2020.07.26-16.47.01:018][963]LogModuleManager: Shutting down and abandoning module LauncherChunkInstaller (66)
+[2020.07.26-16.47.01:018][963]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (62)
+[2020.07.26-16.47.01:019][963]LogModuleManager: Shutting down and abandoning module HTTP (57)
+[2020.07.26-16.47.01:042][963]LogModuleManager: Shutting down and abandoning module SSL (56)
+[2020.07.26-16.47.01:043][963]LogModuleManager: Shutting down and abandoning module WmfMedia (52)
+[2020.07.26-16.47.01:044][963]LogModuleManager: Shutting down and abandoning module Media (51)
+[2020.07.26-16.47.01:044][963]LogModuleManager: Shutting down and abandoning module MagicLeap (48)
+[2020.07.26-16.47.01:044][963]LogModuleManager: Shutting down and abandoning module NiagaraVertexFactories (46)
+[2020.07.26-16.47.01:044][963]LogModuleManager: Shutting down and abandoning module NiagaraShader (44)
+[2020.07.26-16.47.01:044][963]LogModuleManager: Shutting down and abandoning module VariantManagerContent (42)
+[2020.07.26-16.47.01:044][963]LogModuleManager: Shutting down and abandoning module DatasmithContent (40)
+[2020.07.26-16.47.01:045][963]LogModuleManager: Shutting down and abandoning module AISupportModule (38)
+[2020.07.26-16.47.01:045][963]LogModuleManager: Shutting down and abandoning module PlatformCryptoOpenSSL (36)
+[2020.07.26-16.47.01:045][963]LogModuleManager: Shutting down and abandoning module PlatformCryptoTypes (34)
+[2020.07.26-16.47.01:045][963]LogModuleManager: Shutting down and abandoning module PlatformCrypto (32)
+[2020.07.26-16.47.01:045][963]LogModuleManager: Shutting down and abandoning module RenderCore (30)
+[2020.07.26-16.47.01:045][963]LogModuleManager: Shutting down and abandoning module Landscape (28)
+[2020.07.26-16.47.01:045][963]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (26)
+[2020.07.26-16.47.01:045][963]LogModuleManager: Shutting down and abandoning module OpenGLDrv (24)
+[2020.07.26-16.47.01:045][963]LogModuleManager: Shutting down and abandoning module D3D11RHI (22)
+[2020.07.26-16.47.01:045][963]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (20)
+[2020.07.26-16.47.01:045][963]LogModuleManager: Shutting down and abandoning module Renderer (18)
+[2020.07.26-16.47.01:045][963]LogModuleManager: Shutting down and abandoning module Engine (16)
+[2020.07.26-16.47.01:045][963]LogModuleManager: Shutting down and abandoning module CoreUObject (14)
+[2020.07.26-16.47.01:045][963]LogModuleManager: Shutting down and abandoning module NetworkFile (12)
+[2020.07.26-16.47.01:045][963]LogModuleManager: Shutting down and abandoning module CookedIterativeFile (10)
+[2020.07.26-16.47.01:045][963]LogModuleManager: Shutting down and abandoning module StreamingFile (8)
+[2020.07.26-16.47.01:046][963]LogModuleManager: Shutting down and abandoning module SandboxFile (6)
+[2020.07.26-16.47.01:046][963]LogModuleManager: Shutting down and abandoning module PakFile (4)
+[2020.07.26-16.47.01:047][963]LogModuleManager: Shutting down and abandoning module RSA (3)
+[2020.07.26-16.47.01:047][963]LogContentStreaming: Display: There are 1 unreleased StreamingManagers
+[2020.07.26-16.47.01:048][963]LogD3D11RHI: Shutdown
+[2020.07.26-16.47.01:048][963]LogD3D11RHI: CleanupD3DDevice
+[2020.07.26-16.47.01:057][963]LogExit: Exiting.
+[2020.07.26-16.47.01:065][963]Log file closed, 07/26/20 22:17:01
