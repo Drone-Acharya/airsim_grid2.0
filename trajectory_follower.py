@@ -60,8 +60,6 @@ def fly_with_piecewise_control():
 		result = client.moveByVelocityAsync(vx, vy, vz, ts).join()
 		print(i)
 
-	# drone will over-shoot so we bring it back to the start point before landing.
-	client.moveToPositionAsync(0,0,z,1).join()
 	print("landing...")
 	client.landAsync().join()
 	print("disarming...")
