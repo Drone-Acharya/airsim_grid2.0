@@ -9,7 +9,6 @@ import airsim
 
 from traj_gen_sim import get_trajectory
 from trajectory_follower import fly_with_piecewise_control, format_path, format_path2, get_dummy_waypoints
-from tqdm import tqdm
 import json
 import random
 
@@ -129,7 +128,7 @@ def cem(n_iterations= 100, print_every=5, pop_size=10, elite_frac=0.2, sigma=0.5
 	# Initialise
 	best_weight = estimates
 
-	for i_iteration in tqdm(range(1, n_iterations+1)):
+	for i_iteration in range(1, n_iterations+1):
 		weights_pop = [best_weight + (noises*np.random.randn(agent.get_weights_dim())) for i in range(pop_size)]
 		rewards = np.array([agent.evaluate(weights, debug = False) for weights in weights_pop])
 
