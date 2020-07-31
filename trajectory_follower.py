@@ -30,14 +30,14 @@ def fly_with_piecewise_control():
 	
 	# AirSim uses NED coordinates so negative axis is up.
 	# z of -15 is 15 meters above the original launch point.
-	z = -6
-	print("make sure we are hovering at 3 meters...")
+	z = -3.275
+	print("make sure we are hovering at 3.55 meters...")
 	client.moveToZAsync(z, 1).join()
 
 	print("Computing Waypoints...")
 	# PATH REQUIRED IN THIS CASE
 	# waypoints = get_path_over_all_obstacles(client, fast = True)
-	waypoints, gate_length, gate_height = get_dummy_waypoints(client)
+	waypoints, gate_length, gate_height = get_path_over_all_obstacles(client)
 
 		# Initial
 	k = client.simGetGroundTruthKinematics()
@@ -46,7 +46,7 @@ def fly_with_piecewise_control():
 	acc0 = [k.linear_acceleration.x_val, k.linear_acceleration.y_val, k.linear_acceleration.z_val]
 	ts = 0.1
 	print("Computing Path ...")
-	path, vel = get_trajectory(waypoints, gate_length, gate_height, pos0, ts)
+	path, vel = get_trajectory(waypoints, gate_length, gate_height, pos0, ts, 8)
 
 	path = format_path(path)
 
@@ -57,7 +57,7 @@ def fly_with_piecewise_control():
 	# Velocity based traversal
 	for i in range(vel.shape[1]):
 		vx, vy, vz = vel[0][i], vel[1][i], vel[2][i]
-		result = client.moveByVelocityAsync(vx, vy, vz, ts).join()
+		result = client.moveByVelocityAsync(vx, vy, -vz, ts).join()
 		print(i)
 
 	print("landing...")
@@ -94,9 +94,9 @@ def get_dummy_waypoints(client):
 	n_gates = 5
 	width = 5
 	d_bw_gates = 1*4
-	gate_stand = 3*2
-	gate_height = 0.55*2
-	gate_length = 1*4
+	gate_stand = 3
+	gate_height = 0.55
+	gate_length = 1
 
 	# Build Dummy Environment for Visualisation
 	import random
@@ -121,33 +121,29 @@ def get_dummy_waypoints(client):
 
 	return waypoints, gate_length, gate_height
 
-def get_path_over_all_obstacles(client, fast = False):
+def get_path_over_all_obstacles(client):
 	
-	# Return Square for debugging
-	if fast:
-		waypoint_arr = []
-		waypoint_arr.append([0, 0, 20])
-		waypoint_arr.append([10, 0, 20])
-		waypoint_arr.append([10, 10, 20])
-		waypoint_arr.append([0, 10, 20])
-		waypoint_arr.append([0, 0, 20])
-		return waypoint_arr
-
 	# Get All objects
 	objects = client.simListSceneObjects()
 
 	quad_pos = client.simGetVehiclePose()
 	quad_x, quad_y, quad_z = quad_pos.position.x_val, quad_pos.position.y_val, quad_pos.position.z_val
 	
-	objects = ['Cone_5', 'Cylinder2', 'Cylinder3', 'Cylinder4', 'Cylinder5', 'Cylinder6', 'Cylinder7', 'Cylinder8', 'Cylinder_2', 'OrangeBall']
+	
+	waypoints_temp = {}
+
+	for obj in objects:
+		if 'Frame_class' in obj:
+			print(obj)
+
+			obj_pos = client.simGetObjectPose(obj)
+			obj_x, obj_y, obj_z = obj_pos.position.x_val, obj_pos.position.y_val, obj_pos.position.z_val
+			waypoints_temp[obj_x] = np.array([obj_x, obj_y, -quad_z])
 	
 	waypoints = []
 
-	for obj in objects:
-		obj_pos = client.simGetObjectPose(obj)
-		obj_x, obj_y, obj_z = obj_pos.position.x_val, obj_pos.position.y_val, obj_pos.position.z_val
-		waypoints.append([obj_x, obj_y, quad_z])
-	
-	return waypoints
+	for key, value in sorted(waypoints_temp.items()):
+		waypoints.append(value)
+	return waypoints, 1, 0.55
 
 fly_with_piecewise_control()
