@@ -132,7 +132,7 @@ def get_dummy_waypoints(client = None):
 		print("Waypoints - ")
 		print(waypoints)
 
-	return waypoints, gate_length, gate_height, all_obspaths
+	return waypoints, gate_length, gate_height
 
 def get_path_over_all_obstacles(client):
 	

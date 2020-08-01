@@ -79,8 +79,7 @@ def get_trajectory(waypoints, gate_length, gate_height, init, tdelta = 0.1, time
     pTraj.solve()
     time_end = time.time()
     print(time_end - time_start)
-    print(int((1+len(waypoints))*time_between_gates//tdelta))
-    rng = np.linspace(0, (1+len(waypoints))*time_between_gates, int((1+len(waypoints))*time_between_gates//tdelta))
+    rng = np.linspace(0, (2+len(waypoints))*time_between_gates, int((2+len(waypoints))*time_between_gates//tdelta))
     velocities = pTraj.eval(rng, 1)
     path = pTraj.eval(rng, 0)
 
