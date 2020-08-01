@@ -3,8 +3,10 @@ import airsim
 import sys
 import time
 import numpy as np
+import get_fixed_points
 
 def fly_with_piecewise_control():
+
 
 	client = airsim.MultirotorClient()
 	client.confirmConnection()
@@ -37,16 +39,20 @@ def fly_with_piecewise_control():
 	print("Computing Waypoints...")
 	# PATH REQUIRED IN THIS CASE
 	# waypoints = get_path_over_all_obstacles(client, fast = True)
-	waypoints, gate_length, gate_height = get_path_over_all_obstacles(client)
-
 		# Initial
+	
+	waypoints, gate_length, gate_height = get_path_over_all_obstacles(client)
+	print(waypoints)
+	waypoints = get_fixed_points.get_points_modif(waypoints)
+	print(waypoints)
+
 	k = client.simGetGroundTruthKinematics()
 	pos0 = [k.position.x_val, k.position.y_val, -k.position.z_val]
 	vel0 = [k.linear_velocity.x_val, k.linear_velocity.y_val, k.linear_velocity.z_val]
 	acc0 = [k.linear_acceleration.x_val, k.linear_acceleration.y_val, k.linear_acceleration.z_val]
 	ts = 0.1
 	print("Computing Path ...")
-	path, vel = get_trajectory(waypoints, gate_length, gate_height, pos0, ts, 8)
+	path, vel = get_trajectory(waypoints, gate_length, gate_height, pos0, ts, 4)
 
 	path = format_path(path)
 
