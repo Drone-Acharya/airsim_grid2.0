@@ -3,8 +3,10 @@ import airsim
 import sys
 import time
 import numpy as np
+import get_fixed_points
 
 def fly_with_piecewise_control():
+
 
 	client = airsim.MultirotorClient()
 	client.confirmConnection()
@@ -30,22 +32,29 @@ def fly_with_piecewise_control():
 	
 	print("Computing Waypoints...")
 	# PATH REQUIRED IN THIS CASE
-	waypoints, gate_length, gate_height, obspaths = get_dummy_waypoints(client)
 
 	# AirSim uses NED coordinates so negative axis is up.
 	# z of -15 is 15 meters above the original launch point.
-	z = -1 * waypoints[0][2]
-	print("make sure we are hovering at {} meters...".format(-z))
+  
+	z = -3.275
+	print("make sure we are hovering at 3.55 meters...")
 	client.moveToZAsync(z, 1).join()
 
-	# Initial
+	print("Computing Waypoints...")
+	# PATH REQUIRED IN THIS CASE
+	# waypoints = get_path_over_all_obstacles(client, fast = True)
+		# Initial
+	
+	waypoints, gate_length, gate_height = get_path_over_all_obstacles(client)
+	waypoints = get_fixed_points.get_points_modif(waypoints)
+
 	k = client.simGetGroundTruthKinematics()
 	pos0 = [k.position.x_val, k.position.y_val, -k.position.z_val]
 	vel0 = [k.linear_velocity.x_val, k.linear_velocity.y_val, k.linear_velocity.z_val]
 	acc0 = [k.linear_acceleration.x_val, k.linear_acceleration.y_val, k.linear_acceleration.z_val]
 	ts = 0.1
 	print("Computing Path ...")
-	path, vel = get_trajectory(waypoints, gate_length, gate_height, pos0, ts)
+	path, vel = get_trajectory(waypoints, gate_length, gate_height, pos0, ts, 4)
 
 	path = format_path(path)
 
@@ -56,7 +65,7 @@ def fly_with_piecewise_control():
 	for i in range(vel.shape[1]):
 		vx, vy, vz = vel[0][i], vel[1][i], vel[2][i]
 		print("Velocities : {}".format([vx, vy, vz]))
-		result = client.moveByVelocityAsync(vx, vy, vz, ts).join()
+		result = client.moveByVelocityAsync(vx, vy, -vz, ts).join()
 		# act_v = client.getMultirotorState().kinematics_estimated.linear_velocity
 
 	# Path based; Not Using
@@ -95,9 +104,9 @@ def get_dummy_waypoints(client = None):
 	n_gates = 5
 	width = 5
 	d_bw_gates = 1*4
-	gate_stand = 3*2
-	gate_height = 0.55*2
-	gate_length = 1*4
+	gate_stand = 3
+	gate_height = 0.55
+	gate_length = 1
 
 	# Build Dummy Environment for Visualisation
 	import random
@@ -123,36 +132,32 @@ def get_dummy_waypoints(client = None):
 		print("Waypoints - ")
 		print(waypoints)
 
-	return waypoints, gate_length, gate_height, all_obspaths
+	return waypoints, gate_length, gate_height
 
-def get_path_over_all_obstacles(client, fast = False):
+def get_path_over_all_obstacles(client):
 	
-	# Return Square for debugging
-	if fast:
-		waypoint_arr = []
-		waypoint_arr.append([0, 0, 20])
-		waypoint_arr.append([10, 0, 20])
-		waypoint_arr.append([10, 10, 20])
-		waypoint_arr.append([0, 10, 20])
-		waypoint_arr.append([0, 0, 20])
-		return waypoint_arr
-
 	# Get All objects
 	objects = client.simListSceneObjects()
 
 	quad_pos = client.simGetVehiclePose()
 	quad_x, quad_y, quad_z = quad_pos.position.x_val, quad_pos.position.y_val, quad_pos.position.z_val
 	
-	objects = ['Cone_5', 'Cylinder2', 'Cylinder3', 'Cylinder4', 'Cylinder5', 'Cylinder6', 'Cylinder7', 'Cylinder8', 'Cylinder_2', 'OrangeBall']
+	
+	waypoints_temp = {}
+
+	for obj in objects:
+		if 'Frame_class' in obj:
+			print(obj)
+
+			obj_pos = client.simGetObjectPose(obj)
+			obj_x, obj_y, obj_z = obj_pos.position.x_val, obj_pos.position.y_val, obj_pos.position.z_val
+			waypoints_temp[obj_x] = np.array([obj_x, obj_y, -quad_z])
 	
 	waypoints = []
 
-	for obj in objects:
-		obj_pos = client.simGetObjectPose(obj)
-		obj_x, obj_y, obj_z = obj_pos.position.x_val, obj_pos.position.y_val, obj_pos.position.z_val
-		waypoints.append([obj_x, obj_y, quad_z])
-	
-	return waypoints
+	for key, value in sorted(waypoints_temp.items()):
+		waypoints.append(value)
+	return waypoints, 1, 0.55
 
 if __name__ == "__main__":
 	fly_with_piecewise_control()

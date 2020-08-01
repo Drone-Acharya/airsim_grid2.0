@@ -5,16 +5,38 @@ from traj_gen import poly_trajectory as pt
 
 import time
 
-def get_trajectory(waypoints, gate_length, gate_height, init, tdelta = 0.1, silent = False):
+def get_knots(waypoints, init, end, scale = 10):
+    total_time = np.linalg.norm(init - waypoints[0])
+    for wpa, wpb in zip(waypoints[1:], waypoints[:-1]):
+        total_time += np.linalg.norm(wpa-wpb)
+        print(total_time)
+    
+    total_time += np.linalg.norm(waypoints[-1]-end)
+    print(total_time)
+
+    knots = np.zeros((len(waypoints)+2))
+    knots[0] = 0
+    knots[1] = np.linalg.norm(waypoints[0]-init)/total_time
+    for i, (wpa, wpb) in enumerate(zip(waypoints[1:], waypoints[:-1])):
+        knots[i+2] = knots[i+1]+np.linalg.norm(wpa-wpb)/total_time
+    
+    knots[len(waypoints)+1] = 1
+    print(scale)
+    return (knots*scale).astype(np.float)
+
+
+def get_trajectory(waypoints, gate_length, gate_height, init, tdelta = 0.1, time_between_gates = 2, silent = False):
     dim = 3
-    knots = np.array([0.0, 2, 4 , 6 ,8, 10, 12])
+    endPos = np.array([waypoints[-1][0]+1, waypoints[-1][1], waypoints[-1][2]])
+    knots = get_knots(waypoints, init, endPos, time_between_gates*(len(waypoints)+2))
+    print(knots)
     order = 8
     optimTarget = 'poly-coeff' #'end-derivative' 'poly-coeff'
-    maxConti = 4
+    maxConti = 6
     objWeights = np.array([0, 0, 0, 1, 1])
     pTraj = pt.PolyTrajGen(knots, order, optimTarget, dim, maxConti)
 
-    # 2. Pin
+        # 2. Pin
     ts = np.array([0.0])
     Xs = np.array([init])
     Xdot = np.array([0, 0, 0])
@@ -32,7 +54,7 @@ def get_trajectory(waypoints, gate_length, gate_height, init, tdelta = 0.1, sile
     pTraj.addPin(pin_)
 
 
-    pTraj.addPin({'t':12, 'd':0, 'X':np.array([waypoints[-1][0]+2, waypoints[-1][1], waypoints[-1][2]])})
+    pTraj.addPin({'t':knots[-1], 'd':0, 'X':np.array([waypoints[-1][0]+2, waypoints[-1][1], waypoints[-1][2]])})
 
     # passCube = np.array([[3.0, 4.], [-3.0, -2.], [ 1., 2] ]) # in shape [dim, xxx]
     # pin_ = {'t':3, 'd':0, 'X':passCube2}
@@ -40,13 +62,14 @@ def get_trajectory(waypoints, gate_length, gate_height, init, tdelta = 0.1, sile
 
     for i, wp in enumerate(waypoints):
 
-        pin_ = {'t':2+i*2, 'd':0, 'X':np.array(wp)}
+        pin_ = {'t':time_between_gates+i*time_between_gates, 'd':0, 'X':np.array(wp)}
         # pTraj.addPin(pin_)
-        passCube = np.array([wp[0], wp[1], wp[2] ]) # in shape [dim, xxx]
-        pin_ = {'t':2+i*2, 'd':0, 'X':passCube}
+        passCube = np.array([wp[0], wp[1], wp[2]]) # in shape [dim, xxx]
+        pin_ = {'t':knots[i+1], 'd':0, 'X':passCube}
+        print(pin_)
+
         pTraj.addPin(pin_)
 
-        print(pin_)
         # break
     print(np.array([waypoints[-1][0]+10, waypoints[-1][1], waypoints[-1][2]]))
     # solve
@@ -56,9 +79,9 @@ def get_trajectory(waypoints, gate_length, gate_height, init, tdelta = 0.1, sile
     pTraj.solve()
     time_end = time.time()
     print(time_end - time_start)
-    print(tdelta)
-    velocities = pTraj.eval(np.linspace(0, 12, int(12//tdelta)), 1)
-    path = pTraj.eval(np.linspace(0, 12, int(12//tdelta)), 0)
+    rng = np.linspace(0, (2+len(waypoints))*time_between_gates, int((2+len(waypoints))*time_between_gates//tdelta))
+    velocities = pTraj.eval(rng, 1)
+    path = pTraj.eval(rng, 0)
 
     print(path)
     print(velocities)
