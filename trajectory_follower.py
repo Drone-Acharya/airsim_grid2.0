@@ -30,8 +30,12 @@ def fly_with_piecewise_control():
 	    print("take off failed...")
 	    sys.exit(1)
 	
+	print("Computing Waypoints...")
+	# PATH REQUIRED IN THIS CASE
+
 	# AirSim uses NED coordinates so negative axis is up.
 	# z of -15 is 15 meters above the original launch point.
+  
 	z = -3.275
 	print("make sure we are hovering at 3.55 meters...")
 	client.moveToZAsync(z, 1).join()
@@ -42,9 +46,7 @@ def fly_with_piecewise_control():
 		# Initial
 	
 	waypoints, gate_length, gate_height = get_path_over_all_obstacles(client)
-	print(waypoints)
 	waypoints = get_fixed_points.get_points_modif(waypoints)
-	print(waypoints)
 
 	k = client.simGetGroundTruthKinematics()
 	pos0 = [k.position.x_val, k.position.y_val, -k.position.z_val]
@@ -59,12 +61,15 @@ def fly_with_piecewise_control():
 	print("Flying on path ...")
 	client.simPlotLineStrip(path, is_persistent = True)
 
-	print(vel.shape)
 	# Velocity based traversal
 	for i in range(vel.shape[1]):
 		vx, vy, vz = vel[0][i], vel[1][i], vel[2][i]
+		print("Velocities : {}".format([vx, vy, vz]))
 		result = client.moveByVelocityAsync(vx, vy, -vz, ts).join()
-		print(i)
+		# act_v = client.getMultirotorState().kinematics_estimated.linear_velocity
+
+	# Path based; Not Using
+	# result = client.moveOnPathAsync(path, 3, 120).join()
 
 	print("landing...")
 	client.landAsync().join()
@@ -86,7 +91,6 @@ def format_path(wp):
 		path.append(airsim.Vector3r(x,y,z))
 	return path
 
-
 def format_path2(wp):
 	path = []
 	for pt in wp:
@@ -96,7 +100,7 @@ def format_path2(wp):
 		path.append(airsim.Vector3r(x,y,z))
 	return path
 
-def get_dummy_waypoints(client):
+def get_dummy_waypoints(client = None):
 	n_gates = 5
 	width = 5
 	d_bw_gates = 1*4
@@ -119,13 +123,16 @@ def get_dummy_waypoints(client):
 	gate_h_right = [[[gate_coords_x[i], gate_coords_y[i]+gate_length/2, gate_stand], [gate_coords_x[i], gate_coords_y[i]+gate_length/2, gate_stand+gate_height]] for i in range(n_gates)]
 
 	all_obspaths = gate_stands + gate_l_up + gate_l_down + gate_h_left + gate_h_right
-	for obspath in all_obspaths:
-		path = format_path2(obspath)
-		client.simPlotLineStrip(path, color_rgba=[0.0, 0.0, 1.0, 1.0], is_persistent = True)
 
-	print(waypoints)
+	if client:
+		for obspath in all_obspaths:
+			path = format_path2(obspath)
+			client.simPlotLineStrip(path, color_rgba=[0.0, 0.0, 1.0, 1.0], is_persistent = True)
 
-	return waypoints, gate_length, gate_height
+		print("Waypoints - ")
+		print(waypoints)
+
+	return waypoints, gate_length, gate_height, all_obspaths
 
 def get_path_over_all_obstacles(client):
 	
@@ -152,4 +159,5 @@ def get_path_over_all_obstacles(client):
 		waypoints.append(value)
 	return waypoints, 1, 0.55
 
-fly_with_piecewise_control()
+if __name__ == "__main__":
+	fly_with_piecewise_control()
