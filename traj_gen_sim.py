@@ -25,7 +25,7 @@ def get_knots(waypoints, init, end, scale = 10):
     return (knots*scale).astype(np.float)
 
 
-def get_trajectory(waypoints, gate_length, gate_height, init, tdelta = 0.1, time_between_gates = 2, silent = False):
+def get_trajectory(waypoints, gate_length, gate_height, init, tdelta = 0.1, time_between_gates = 2, silent = False, initvel = None, initacc = None):
     dim = 3
     endPos = np.array([waypoints[-1][0]+1, waypoints[-1][1], waypoints[-1][2]])
     knots = get_knots(waypoints, init, endPos, time_between_gates*(len(waypoints)+2))
@@ -39,8 +39,15 @@ def get_trajectory(waypoints, gate_length, gate_height, init, tdelta = 0.1, time
         # 2. Pin
     ts = np.array([0.0])
     Xs = np.array([init])
-    Xdot = np.array([0, 0, 0])
-    Xddot = np.array([0, 0, 0])
+    if initvel is None:
+        Xdot = np.array([0, 0, 0])
+    else:
+        Xdot = np.array(initvel)
+
+    if initacc is None:
+        Xddot = np.array([0, 0, 0])
+    else:
+        Xddot = np.array(initacc)
 
     # create pin dictionary
     for i in range(Xs.shape[0]):
