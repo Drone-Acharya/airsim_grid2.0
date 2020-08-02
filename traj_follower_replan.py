@@ -93,17 +93,21 @@ def fly_with_piecewise_control():
 				result = client.moveByVelocityAsync(vx, vy, -vz, ts).join()
 
 			px, py, pz = path_o[0][i], path_o[1][i], path_o[2][i]
-			# Update Waypoints
-			if px >= waypoints[0][0]:
-				waypoints = waypoints[1:]
-				if len(waypoints) == 0:
-					done = True
-					break
 
 			k = client.simGetGroundTruthKinematics()
 			pos0 = [k.position.x_val, k.position.y_val, -k.position.z_val]
 			vel0 = [k.linear_velocity.x_val, k.linear_velocity.y_val, k.linear_velocity.z_val]
 			acc0 = [k.linear_acceleration.x_val, k.linear_acceleration.y_val, k.linear_acceleration.z_val]
+
+			# Update Waypoints
+			if pos0[0] >= waypoints[0][0]:
+				waypoints = waypoints[1:]
+				if len(waypoints) == 0:
+					done = True
+					break
+			print("Current Waypoint")
+			print(pos0)
+			print(waypoints)
 
 			drift = (pos0[0]-px)**2 + (pos0[1]-py)**2 + (pos0[2]-pz)**2
 			# Changed Breaking Condition
