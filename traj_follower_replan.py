@@ -4,8 +4,20 @@ import sys
 import time
 import numpy as np
 import get_fixed_points
+import random
 
 def fly_with_piecewise_control():
+
+	colors = [
+		[1, 0, 0],
+		[1, 1, 0],
+		[1, 0, 1],
+		[1, 1, 1],
+		[0, 1, 0],
+		[1, 1, 1],
+	]
+	ci = 0
+	cl = len(colors)
 
 
 	client = airsim.MultirotorClient()
@@ -48,24 +60,27 @@ def fly_with_piecewise_control():
 	waypoints, gate_length, gate_height = get_dummy_waypoints(client)
 	waypoints = get_fixed_points.get_points_modif(waypoints)
 
-	k = client.simGetGroundTruthKinematics()
-	pos0 = [k.position.x_val, k.position.y_val, -k.position.z_val]
-	vel0 = [k.linear_velocity.x_val, k.linear_velocity.y_val, k.linear_velocity.z_val]
-	acc0 = [k.linear_acceleration.x_val, k.linear_acceleration.y_val, k.linear_acceleration.z_val]
-	ts = 0.1
 	done = False
-
 	p = 0 
 	while not done:
 		start_drift = 100
 
 		print("Computing Path ...")
-		path_o, vel = get_trajectory(waypoints, gate_length, gate_height, pos0, ts, 4)
+
+		k = client.simGetGroundTruthKinematics()
+		pos0 = [k.position.x_val, k.position.y_val, -k.position.z_val]
+		vel0 = [k.linear_velocity.x_val, k.linear_velocity.y_val, k.linear_velocity.z_val]
+		acc0 = [k.linear_acceleration.x_val, k.linear_acceleration.y_val, k.linear_acceleration.z_val]
+		ts = 0.1
+
+		path_o, vel = get_trajectory(waypoints, gate_length, gate_height, pos0, ts, 4, silent = True, initvel = vel0, initacc = acc0)
 
 		path = format_path(path_o)
 
 		print("Flying on path ...")
-		client.simPlotLineStrip(path, is_persistent = True)
+		color = colors[ci]
+		ci = (ci+1)%cl
+		client.simPlotLineStrip(path, color_rgba=[color[0], color[1], color[2], 1.0], is_persistent = True)
 
 		# Velocity based traversal
 		i = 0 
@@ -73,7 +88,7 @@ def fly_with_piecewise_control():
 			vx, vy, vz = vel[0][i], vel[1][i], vel[2][i]
 			print("Velocities : {}".format([vx, vy, vz]))
 			if p < 2:
-				result = client.moveByVelocityAsync(vx+10, vy+10, -vz-10, ts).join()
+				result = client.moveByVelocityAsync(vx+1, vy+1, -vz-1, ts).join()
 			else:
 				result = client.moveByVelocityAsync(vx, vy, -vz, ts).join()
 
@@ -91,7 +106,8 @@ def fly_with_piecewise_control():
 			acc0 = [k.linear_acceleration.x_val, k.linear_acceleration.y_val, k.linear_acceleration.z_val]
 
 			drift = (pos0[0]-px)**2 + (pos0[1]-py)**2 + (pos0[2]-pz)**2
-			if drift > max(start_drift, 10) and i > 5:
+			# Changed Breaking Condition
+			if drift > 1 and i > 5:
 				print("Drift Increasing, Replan!")
 				p += 1
 				break	
