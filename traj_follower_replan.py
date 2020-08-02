@@ -69,8 +69,8 @@ def fly_with_piecewise_control():
 
 		k = client.simGetGroundTruthKinematics()
 		pos0 = [k.position.x_val, k.position.y_val, -k.position.z_val]
-		vel0 = [k.linear_velocity.x_val, k.linear_velocity.y_val, k.linear_velocity.z_val]
-		acc0 = [k.linear_acceleration.x_val, k.linear_acceleration.y_val, k.linear_acceleration.z_val]
+		vel0 = [k.linear_velocity.x_val, k.linear_velocity.y_val, -k.linear_velocity.z_val]
+		acc0 = [k.linear_acceleration.x_val, k.linear_acceleration.y_val, -k.linear_acceleration.z_val]
 		ts = 0.1
 
 		path_o, vel = get_trajectory(waypoints, gate_length, gate_height, pos0, ts, 4, silent = True, initvel = vel0, initacc = acc0)
@@ -96,8 +96,8 @@ def fly_with_piecewise_control():
 
 			k = client.simGetGroundTruthKinematics()
 			pos0 = [k.position.x_val, k.position.y_val, -k.position.z_val]
-			vel0 = [k.linear_velocity.x_val, k.linear_velocity.y_val, k.linear_velocity.z_val]
-			acc0 = [k.linear_acceleration.x_val, k.linear_acceleration.y_val, k.linear_acceleration.z_val]
+			vel0 = [k.linear_velocity.x_val, k.linear_velocity.y_val, -k.linear_velocity.z_val]
+			acc0 = [k.linear_acceleration.x_val, k.linear_acceleration.y_val, -k.linear_acceleration.z_val]
 
 			# Update Waypoints
 			if pos0[0] >= waypoints[0][0]:
