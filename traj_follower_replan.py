@@ -90,7 +90,7 @@ def fly_with_piecewise_control():
 			vel0 = [k.linear_velocity.x_val, k.linear_velocity.y_val, k.linear_velocity.z_val]
 			acc0 = [k.linear_acceleration.x_val, k.linear_acceleration.y_val, k.linear_acceleration.z_val]
 
-			drift = (pos0[0]-px)**2 + (pos0[1]-py)**2 + (pos0[2]-py)**2
+			drift = (pos0[0]-px)**2 + (pos0[1]-py)**2 + (pos0[2]-pz)**2
 			if drift > max(start_drift, 10) and i > 5:
 				print("Drift Increasing, Replan!")
 				p += 1
