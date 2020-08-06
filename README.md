@@ -8,6 +8,6 @@
 3) Environment scaled with collisions disabled: https://drive.google.com/file/d/1DZb-bfjybF1xg585k2GtYo4idxeW7idH/view?usp=sharing  
     Description: The default drone mesh is conserved and the environment is scaled by a factor of 10(in terms of mesh size, the real world dimensions are conserved hence maintaining the physics). Collisions are disabled in this environment.
 
-4) Environment with custom drone: https://drive.google.com/file/d/1QI7QFL5uArw9uuwLlrM93lufCt4X_vug/view?usp=sharing  
+4) Environment with custom drone: https://drive.google.com/file/d/1WpVjCEwOvmiTE-4BTEsTxE8PD7iPbbxF/view?usp=sharing
     Description: The custom drone is added to the environment.  
         Usage: Go to the Documents/AirSim/settings.json and replace it with the settings.json in this repository
