@@ -1,0 +1,9 @@
+{
+  "SeeDocsAt": "https://github.com/Microsoft/AirSim/blob/master/docs/settings.md",
+  "SettingsVersion": 1.2,
+  "SimMode": "Multirotor",
+  "PawnPaths": {
+    "DefaultCar": {"PawnBP":"/AirSim/VehicleAdv/SUV/SuvCarPawn"},
+    "DefaultQuadrotor": {"PawnBP":"Class'/AirSim/Blueprints/BP_CustomRotor1.BP_CustomRotor1_c'"}
+  }
+}
