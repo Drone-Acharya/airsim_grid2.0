@@ -1,15 +1,13 @@
-# airsim_grid2.0
+1) Environment: https://drive.google.com/drive/folders/128E_wL2bBFVVITpMRrhShk5oRLy02mUF?usp=sharing  
+    Description: This is plain environment files without Airsim plugin
 
-### Repo Guidelines
----
-Use this branch only for direct controller code. Or maybe nothing. TBD
+2) Scaled drone: https://drive.google.com/drive/folders/1AMhjyyjzijP1EcZYIISuqwbYf8bF7N_G?usp=sharing  
+    Description: The default drone mesh size is scaled down by factor of 10 to make it more compatible with the environment.  
+        Issues: Propellers out or position, PID might not be right.
 
- - All hardware related files go into `hardware-files`
- - All simulator related files go into `sim-files`
- - Rest TBD
+3) Environment scaled with collisions disabled: https://drive.google.com/file/d/1DZb-bfjybF1xg585k2GtYo4idxeW7idH/view?usp=sharing  
+    Description: The default drone mesh is conserved and the environment is scaled by a factor of 10(in terms of mesh size, the real world dimensions are conserved hence maintaining the physics). Collisions are disabled in this environment.
 
- ### PROPOSE PR ONLY FROM YOUR FORK AND NOT FROM ORIGIN MASTER. LET'S KEEP CODEBASE CLEAN.
----
-
-1. Git clone https://github.com/uzh-rpg/minimum_jerk_trajectories and put in parent directory (or append path in `min_jerk_uzh.py`).
-2. Run `python trajectory_follower.py` with Airsim running.
+4) Environment with custom drone: https://drive.google.com/file/d/1QI7QFL5uArw9uuwLlrM93lufCt4X_vug/view?usp=sharing  
+    Description: The custom drone is added to the environment.  
+        Usage: Go to the Documents/AirSim/settings.json and replace it with the settings.json in this repository
